@@ -34,18 +34,19 @@ $(document).ready(function(){
   })
 
 
-
-  $('img:first').click(function(){
+  $('.restaurants img').click(function(){
 
     $('.modal-title').empty();
     $('.address').empty();
     $('.cost').empty();
 
     var name = $(this).attr("data-name");
+    var message = $(this).attr("data-message")
     var address = $(this).attr("data-address");
     var cost = $(this).attr("data-cost");
 
     $('.modal-title').append(name);
+    $('.message').append(message);
     $('.address').append(address);
     $('.cost').append(cost);
   })
