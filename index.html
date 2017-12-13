@@ -1,0 +1,136 @@
+<html>    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <link rel="shortcut icon" href="assets/img/foodmap.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <title>FoodMap</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>Foodmap</h1>            
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2>Foodmap</h2>
+            <hr>
+          </div>    
+        </div>
+        <div class="row container">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 embed-responsive embed-responsive-16by9">
+            <iframe class="map" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyA3CyFrzU5NCxDrTbRfIRaYQDGGKTqlhcs&q=comida+china+santiago" allowfullscreen>
+            </iframe>
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>Comida cerca de ti</h3>
+            
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Tipo de comida...
+                <span class="fa fa-search"></span>
+              </button>
+              <ul class="dropdown-menu form-inline" aria-labelledby="dropdownMenu1">
+                <li><a href="#" id="chileanFood">Chilena</a></li>
+                <li><a href="#" id="italianFood">Italiana</a></li>
+                <li><a href="#" id="chineseFood">China</a></li>
+                <li><a href="#" id="japaneseFood">Japonesa</a></li>
+                <li><a href="#" id="mexicanFood">Mexicana</a></li>
+              </ul>
+            </div>
+
+          </div>  
+        </div>
+        <div class="row restaurants">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img class="img-responsive foodFirstRow random chilean" data-toggle="modal" data-target="#myModal" data-name="Humitas" data-address="En la punta del cerro" data-cost="Precios entre x e y" src="assets/img/chilean.jpg" alt="">
+                <img class="img-responsive foodFirstRow back italian" src="assets/img/italian02.jpg" alt="">
+                <img class="img-responsive foodFirstRow back chinese" src="assets/img/chinese02.jpg" alt="">
+                <img class="img-responsive foodFirstRow back mexican" src="assets/img/mexican02.jpg" alt="">
+                <img class="img-responsive foodFirstRow back japanese" src="assets/img/japanese02.jpg" alt="">
+                
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img class="img-responsive foodFirstRow random chinese" src="assets/img/chinese.jpg" alt="">
+                <img class="img-responsive foodFirstRow back chilean" src="assets/img/chilean03.jpg" alt="">  
+                <img class="img-responsive foodFirstRow back italian" src="assets/img/italian03.jpg" alt="">  
+                <img class="img-responsive foodFirstRow back mexican" src="assets/img/mexican03.jpg" alt="">
+                <img class="img-responsive foodFirstRow back japanese" src="assets/img/japanese03.jpg" alt="">
+                
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="img-responsive foodSecRow random italian" src="assets/img/italian.jpg" alt="">
+                <img class="img-responsive foodSecRow back chilean" src="assets/img/chilean02.jpg" alt="">   
+                <img class="img-responsive foodSecRow back chinese" src="assets/img/chinese03.jpg" alt="">
+                <img class="img-responsive foodSecRow back mexican" src="assets/img/mexican04.jpg" alt="">
+                <img class="img-responsive foodSecRow back japanese" src="assets/img/japanese04.jpg" alt="">
+                
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="img-responsive foodSecRow random japanese" src="assets/img/japanese.jpg" alt="">
+                <img class="img-responsive foodSecRow back chilean" src="assets/img/chilean05.jpg" alt="">  
+                <img class="img-responsive foodSecRow back italian" src="assets/img/italian04.gif" alt="">
+                <img class="img-responsive foodSecRow back chinese" src="assets/img/chinese04.jpg" alt="">
+                <img class="img-responsive foodSecRow back mexican" src="assets/img/mexican05.jpeg" alt="">             
+                
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="img-responsive foodSecRow random mexican" src="assets/img/mexican.jpg" alt="">
+                <img class="img-responsive foodSecRow back chilean" src="assets/img/chilean04.jpg" alt="">
+                <img class="img-responsive foodSecRow back italian" src="assets/img/italian05.jpg" alt="">
+                <img class="img-responsive foodSecRow back chinese" src="assets/img/chinese05.jpg" alt="">
+                <img class="img-responsive foodSecRow back japanese" src="assets/img/japanese05.jpeg" alt="">
+                
+              </div>
+            </div>
+          </div>    
+        </div>
+            <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-xs-6 address"></div>
+                  <div class="col-xs-6 cost"></div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Pedir ahora</button>
+              </div>
+            </div>        
+          </div>
+        </div>
+            <!-- Modal -->        
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script> 
+    <script src="assets/js/bootstrap.min.js"></script>     
+    <script src="assets/js/app.js"></script>
+  </body>  
+</html>

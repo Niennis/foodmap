@@ -1,0 +1,53 @@
+body{
+  font-family: 'Dosis', sans-serif;
+  background-color: rgb(65, 65, 65);
+  color: orange;
+  text-align: center;
+}
+
+header{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-size: 5em;
+  margin: 50% 0;
+}
+
+.restaurants{
+  margin: 1em 0 0 0;
+}
+
+.foodFirstRow{
+  margin: 0.5em 0em 0.2em 0em;
+  height: 18%;
+}
+
+.foodSecRow{
+  margin: 0.2em 0em 0.5em 0em;
+  height: 6em;
+}
+
+.col-xs-4{
+  padding: 0.2em;
+}
+
+.col-xs-6{
+  padding: 0.2em;  
+}
+
+.dropdown-toggle{
+  width: 20em;
+}
+
+.dropdown-menu{
+  width: 20em;
+  position: relative;
+  float: none;
+  margin: auto;
+}
+
+#myModal{
+  margin: 15% 5%;
+}
