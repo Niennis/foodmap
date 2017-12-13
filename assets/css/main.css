@@ -80,3 +80,12 @@ h1{
   margin-left: auto;
   margin-right: auto;
 }
+
+.hoverName{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+}

@@ -33,10 +33,26 @@ $(document).ready(function(){
     $('.chinese').show();
   })
 
+  //------- FUNCION MOUSEOVER/MOUSEOUT--------
+  $('.restaurants img').mouseover(function(){
+    var name = $(this).attr("data-name");
+    
+    $(this).css({"filter":"blur(5px)"});
+    $(this).after('<p class="hoverName">' + name + '</p>');
+  })
+  
+    $('.restaurants img').mouseout(function(){
+      var name = $(this).attr("data-name");
+      
+      $(this).css({"filter":"none"});
+      $('.hoverName').remove();
+    })
 
+//-------- FIN MOUSEOVER/MOUSEOUT------------
   $('.restaurants img').click(function(){
 
     $('.modal-title').empty();
+    $('.message').empty();
     $('.address').empty();
     $('.cost').empty();
 
@@ -50,7 +66,5 @@ $(document).ready(function(){
     $('.address').append(address);
     $('.cost').append(cost);
   })
-
-
 });
 
